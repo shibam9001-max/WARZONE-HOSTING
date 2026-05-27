@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Warzone Hosting</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -20,25 +23,46 @@ body{
 }
 
 /* RGB BACKGROUND */
+
 body::before{
     content:'';
     position:fixed;
     width:100%;
     height:100%;
-    background:linear-gradient(45deg,#ff0000,#00ffcc,#ff00ff,#00ff00,#0099ff,#ff6600);
+    background:linear-gradient(
+        45deg,
+        #ff0000,
+        #00ffcc,
+        #ff00ff,
+        #00ff00,
+        #0099ff,
+        #ff6600
+    );
+
     background-size:600% 600%;
     animation:rgbBG 10s infinite alternate;
-    z-index:-3;
+    z-index:-2;
     opacity:0.25;
 }
 
 @keyframes rgbBG{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
 }
 
 /* NAVBAR */
+
 nav{
     width:100%;
     padding:18px 8%;
@@ -76,7 +100,8 @@ nav ul li a:hover{
     text-shadow:0 0 10px #00ffcc;
 }
 
-/* HERO SECTION */
+/* HERO */
+
 .hero{
     min-height:100vh;
     display:flex;
@@ -93,7 +118,7 @@ nav ul li a:hover{
     position:absolute;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.65);
+    background:rgba(0,0,0,0.7);
     top:0;
     left:0;
 }
@@ -134,7 +159,8 @@ nav ul li a:hover{
     box-shadow:0 0 40px #00ff66;
 }
 
-/* PLANS SECTION */
+/* PLANS */
+
 #plans{
     padding:100px 8%;
     text-align:center;
@@ -165,7 +191,16 @@ nav ul li a:hover{
     content:'';
     position:absolute;
     inset:-3px;
-    background:linear-gradient(45deg,#ff0000,#00ffcc,#ff00ff,#00ff00,#0099ff,#ff6600);
+    background:linear-gradient(
+        45deg,
+        #ff0000,
+        #00ffcc,
+        #ff00ff,
+        #00ff00,
+        #0099ff,
+        #ff6600
+    );
+
     background-size:600% 600%;
     animation:rgbBorder 5s linear infinite;
     z-index:-1;
@@ -181,9 +216,19 @@ nav ul li a:hover{
 }
 
 @keyframes rgbBorder{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
 }
 
 .plan-box:hover{
@@ -227,6 +272,7 @@ nav ul li a:hover{
 }
 
 /* FEATURES */
+
 .features{
     padding:100px 8%;
 }
@@ -270,6 +316,7 @@ footer{
 }
 
 @media(max-width:768px){
+
     .hero h1{
         font-size:45px;
         line-height:55px;
@@ -278,99 +325,227 @@ footer{
     nav ul{
         display:none;
     }
+
 }
+
 </style>
 </head>
+
 <body>
 
 <nav>
-    <div class="logo">WARZONE HOSTING</div>
+
+    <div class="logo">
+        WARZONE HOSTING
+    </div>
 
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#plans">Pricing</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#">Reviews</a></li>
         <li><a href="#">Support</a></li>
     </ul>
+
 </nav>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Minecraft Server Hosting</h1>
-        <p>Powerful RGB Minecraft Hosting With Ultra Fast NVMe SSD & Lag Free Performance.</p>
 
-        <a href="#plans" class="btn">Get Started</a>
+    <div class="hero-content">
+
+        <h1>
+            WARZONE HOSTING
+        </h1>
+
+        <p>
+            Ultra Fast Minecraft Hosting With RGB Performance
+        </p>
+
+        <a href="#plans" class="btn">
+            GET STARTED
+        </a>
+
     </div>
+
 </section>
 
 <section id="plans">
-    <h1 class="section-title">Warzone Hosting Plans</h1>
+
+    <h1 class="section-title">
+        HOSTING PLANS
+    </h1>
 
     <div class="plan-container">
 
         <div class="plan-box">
+
             <h2>Starter Blaze</h2>
-            <div class="price">₹49/mo</div>
-            <div class="spec">CPU: 100%</div>
-            <div class="spec">NVMe: 5GB</div>
-            <div class="spec">RAM: 2GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹49/mo
+            </div>
+
+            <div class="spec">
+                CPU: 100%
+            </div>
+
+            <div class="spec">
+                NVMe: 5GB
+            </div>
+
+            <div class="spec">
+                RAM: 2GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
         <div class="plan-box">
+
             <h2>Shadow Core</h2>
-            <div class="price">₹99/mo</div>
-            <div class="spec">CPU: 150%</div>
-            <div class="spec">NVMe: 10GB</div>
-            <div class="spec">RAM: 3GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹99/mo
+            </div>
+
+            <div class="spec">
+                CPU: 150%
+            </div>
+
+            <div class="spec">
+                NVMe: 10GB
+            </div>
+
+            <div class="spec">
+                RAM: 3GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
         <div class="plan-box">
+
             <h2>Dragon Power</h2>
-            <div class="price">₹149/mo</div>
-            <div class="spec">CPU: 200%</div>
-            <div class="spec">NVMe: 20GB</div>
-            <div class="spec">RAM: 4GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹149/mo
+            </div>
+
+            <div class="spec">
+                CPU: 200%
+            </div>
+
+            <div class="spec">
+                NVMe: 20GB
+            </div>
+
+            <div class="spec">
+                RAM: 4GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
         <div class="plan-box">
+
             <h2>Galaxy Beast</h2>
-            <div class="price">₹249/mo</div>
-            <div class="spec">CPU: 300%</div>
-            <div class="spec">NVMe: 40GB</div>
-            <div class="spec">RAM: 6GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹249/mo
+            </div>
+
+            <div class="spec">
+                CPU: 300%
+            </div>
+
+            <div class="spec">
+                NVMe: 40GB
+            </div>
+
+            <div class="spec">
+                RAM: 6GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
         <div class="plan-box">
+
             <h2>Titan Overload</h2>
-            <div class="price">₹349/mo</div>
-            <div class="spec">CPU: 400%</div>
-            <div class="spec">NVMe: 60GB</div>
-            <div class="spec">RAM: 8GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹349/mo
+            </div>
+
+            <div class="spec">
+                CPU: 400%
+            </div>
+
+            <div class="spec">
+                NVMe: 60GB
+            </div>
+
+            <div class="spec">
+                RAM: 8GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
         <div class="plan-box">
+
             <h2>Inferno Elite</h2>
-            <div class="price">₹499/mo</div>
-            <div class="spec">CPU: 500%</div>
-            <div class="spec">NVMe: 80GB</div>
-            <div class="spec">RAM: 12GB</div>
-            <a href="#" class="buy-btn">Buy Now</a>
+
+            <div class="price">
+                ₹499/mo
+            </div>
+
+            <div class="spec">
+                CPU: 500%
+            </div>
+
+            <div class="spec">
+                NVMe: 80GB
+            </div>
+
+            <div class="spec">
+                RAM: 12GB
+            </div>
+
+            <a href="https://discord.gg/YOURSERVER" target="_blank" class="buy-btn">
+                Buy Now
+            </a>
+
         </div>
 
     </div>
+
 </section>
 
 <section class="features" id="features">
-    <h1 class="section-title">Why Choose Warzone Hosting?</h1>
+
+    <h1 class="section-title">
+        WHY CHOOSE WARZONE HOSTING?
+    </h1>
 
     <div class="feature-box">
+
         <ul>
+
             <li>Ultra Fast Ryzen Powered CPUs</li>
             <li>99.99% Uptime Guarantee</li>
             <li>Premium DDoS Protection Included</li>
@@ -380,13 +555,18 @@ footer{
             <li>24/7 Discord & Ticket Support</li>
             <li>Powerful NVMe SSD Storage</li>
             <li>Lag Free SMP & BoxPVP Experience</li>
-            <li>Custom Control Panel With RGB Theme</li>
+            <li>Custom RGB Gaming Style Website</li>
+
         </ul>
+
     </div>
+
 </section>
 
 <footer>
-    © 2026 Warzone Hosting | All Rights Reserved
+
+    © 2026 WARZONE HOSTING | ALL RIGHTS RESERVED
+
 </footer>
 
 </body>
